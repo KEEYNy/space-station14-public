@@ -1,0 +1,30 @@
+- type: entity
+  id: BannerElisiumPrimeArm
+  parent: BannerBase
+  name: Banner ElisiumPrimeArm
+  suffix: ElisiumPrime
+  description: Banner ElisiumPrimeArm
+  components:
+  - type: Sprite
+    sprite: Imperial/felix/ElysiumPrime/Banner.rsi
+    state: arm
+
+- type: entity
+  id: BannerElisiumPrimeCitizen
+  parent: BannerElisiumPrimeArm
+  name: Banner ElisiumPrimeCitizen
+  suffix: ElisiumPrime
+  description: Banner ElisiumPrimeCitizen
+  components:
+  - type: Sprite
+    state: citizen
+
+- type: entity
+  id: BannerElisiumPrimeCommand
+  parent: BannerElisiumPrimeArm
+  name: Banner ElisiumPrimeCommand
+  suffix: ElisiumPrime
+  description: Banner ElisiumPrimeCommand
+  components:
+  - type: Sprite
+    state: command

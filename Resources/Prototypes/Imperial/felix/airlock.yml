@@ -1,0 +1,15 @@
+- type: entity
+  parent: Airlock
+  id: AirlockElisiumPrime
+  suffix: ElisiumPrime
+  components:
+  - type: Sprite
+    sprite: Imperial/felix/ElysiumPrime/airlock/normal.rsi
+
+- type: entity
+  parent: AirlockElisiumPrime
+  id: AirlockElisiumPrimeLocked
+  suffix: ElisiumPrime, Closed
+  components:
+  - type: AccessReader
+    access: [["ElisiumPrime"]]
