@@ -1,0 +1,29 @@
+- type: entity
+  parent: IDCardStandard
+  id: ElisiumPrimeIDCard
+  name: ElisiumPrime ID card
+  components:
+  - type: Sprite
+    sprite: Imperial/felix/ElysiumPrime/IdCard/EPCard.rsi
+    state: ElisiumPrime
+  - type: Access
+    tags:
+    - ElisiumPrime
+
+- type: entity
+  parent: BaseCustomPDA
+  id: ElisiumPrimePDA
+  name: ElisiumPrime PDA
+  description:
+  components:
+  - type: Sprite
+    sprite: Imperial/felix/ElysiumPrime/IdPod.rsi
+    state: ElisiumPrime
+  - type: Icon
+    state: pda-ElisiumPrime
+  - type: Pda
+    id: ElisiumPrimeIDCard
+    state: pda-ElisiumPrime
+  - type: PdaBorderColor
+    borderColor: "#242424"
+    accentHColor: "#447987"
